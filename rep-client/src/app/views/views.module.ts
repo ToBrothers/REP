@@ -15,6 +15,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { AgmCoreModule } from '@agm/core';
 import { AgmJsMarkerClustererModule } from '@agm/js-marker-clusterer';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InputMaskDirective } from '../shared/Directives/inputmask.directive';
 
 
 
@@ -28,7 +30,8 @@ import { AgmJsMarkerClustererModule } from '@agm/js-marker-clusterer';
     ContactUsComponent,
     HomePageComponent,
     PropertyDetailComponent,
-    OurProfessionalDetailComponent
+    OurProfessionalDetailComponent,
+    InputMaskDirective
   ],
   imports: [
     CommonModule,
@@ -38,16 +41,9 @@ import { AgmJsMarkerClustererModule } from '@agm/js-marker-clusterer';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDnJEAQfHhQPYxgAVdMjLbLL5r1hQ7PpoQ'
     }),
-    AgmJsMarkerClustererModule
-  ],
-  exports: [
-    WhyRepComponent, 
-    JoinRepComponent, 
-    OurProfessionalsComponent, 
-    PropertySearchComponent, 
-    HomeEvaluationComponent, 
-    ContactUsComponent, 
-    HomePageComponent
+    AgmJsMarkerClustererModule,    
+    FormsModule,
+    ReactiveFormsModule
   ]
   // providers: [ ]
 })
