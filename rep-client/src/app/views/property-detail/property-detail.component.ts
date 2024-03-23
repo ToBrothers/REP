@@ -38,6 +38,15 @@ export class PropertyDetailComponent implements OnInit {
       this.PropertyDetail = data;
       this.images = this.PropertyDetail.imagesUrl;
     });
+
+    // this.propertySearchService.getPropertyDetails().subscribe(data => {
+    //   this.PropertyDetail = data;
+    //   this.images = this.PropertyDetail.imagesUrl;
+    // });
+
+    
+
+
   }
 
   
