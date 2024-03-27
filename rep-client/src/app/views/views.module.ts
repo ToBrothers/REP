@@ -18,6 +18,7 @@ import { AgmJsMarkerClustererModule } from '@agm/js-marker-clusterer';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputMaskDirective } from '../shared/Directives/inputmask.directive';
 import { AboutUsComponent } from './About/about-us/about-us.component';
+import { ListingTypesComponent } from './listing-types/listing-types.component';
 
 
 
@@ -33,7 +34,8 @@ import { AboutUsComponent } from './About/about-us/about-us.component';
     PropertyDetailComponent,
     OurProfessionalDetailComponent,
     InputMaskDirective,
-    AboutUsComponent
+    AboutUsComponent,
+    ListingTypesComponent
   ],
   imports: [
     CommonModule,
