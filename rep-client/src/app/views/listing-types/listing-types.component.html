@@ -63,11 +63,10 @@
                   </div>
                </div>
                <div class="list-content">
-                  <div class="list-price mb-2">${{property.listPrice}}</div>
+                  <div class="list-price mb-2">{{property.listPrice | currency: 'CAD' : 'symbol-narrow' : '4.0-2'}}</div>
                   <h6 class="list-title">
-                     <a routerLink="/views/property-detail/{{property.listingKeyNumeric}}">{{property.city}},
-                        {{property.stateOrProvince}}</a>
-                  </h6>
+                    <a routerLink="/views/property-detail/{{property.listingKeyNumeric}}">{{property.fullAddress}}</a>
+                 </h6>
                   <p class="list-text">{{property.propertyType}}</p>
                   <div class="list-meta d-flex align-items-center gap-3">
                      <a href="javascript:void(0)"><span class="flaticon-expand"></span>{{property.livingAreaSF}}
